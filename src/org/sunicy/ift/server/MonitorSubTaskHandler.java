@@ -32,11 +32,6 @@ public class MonitorSubTaskHandler {
 	public static final int STATUS_FAIL = 4;
 	public static final int STATUS_ABORT = 5;
 	
-	//请求类型（pause、modify），便于向主线程回传结果的时候知道自己在做什么- -#
-	public static final String MSG_FIELD_REQUEST_TYPE = "requestType";
-		public static final String MSG_REQUEST_TYPE_PAUSE = "pause";
-		public static final String MSG_REQUEST_TYPE_MODIFY = "modify";
-	
 	private ITaskManagementRequest taskManagementRequest;
 	//子任务状态
 	private int subTaskStatus = STATUS_STOP;

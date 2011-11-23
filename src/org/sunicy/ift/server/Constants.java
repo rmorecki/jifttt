@@ -21,30 +21,30 @@ public class Constants {
 	//客户端的信息获取请求
 	public static final String MSG_FIELD_INFO = "info";
 	//任务字段
-	public static final String MSG_FIELD_TASK = "task";
+	public static final String MSG_FIELD_TASKID = "taskId";
+	
+	//表达式字段
+	public static final String MSG_FIELD_EXPRESSION = "expression";
 	
 	//子任务字段
-	public static final String MSG_FIELD_SUBTASK = "subtask";
+	public static final String MSG_FIELD_SUBTASK = "subTask";
+	//子任务编号字段
+	public static final String MSG_FIELD_SUBTASKID = "subTaskId";
 	
 	//反馈注释（任务、子任务均可，适用于任何操作）
 	public static final String MSG_FIELD_COMMENT = "comment";
 	
 	//任务（子任务）完成状态
-	public static final String MSG_FIELD_STATUS = "status";
-		public static final String MSG_STATUS_SUCCESS = "success";
-		public static final String MSG_STATUS_FAIL = "fail";
-		public static final String MSG_STATUS_RUNNING = "running";
-		
+	public static final String MSG_FIELD_CONDITION = "condition";		
 	//模块编号，用于各类原语
 	public static final String MSG_FIELD_MODEL_ID = "modelId";
 	//监视原语（用于添加新任务，e.g.，“(A&B)|C”代表“当且仅当C发生或A、B同时发生时，激活Executor们”）
 	public static final String MSG_FIELD_MONITOR = "monitor";
 	//动作原语（用于添加新任务，e.g.,“DE”代表条件成熟时，同时执行DE）
-	public static final String MSG_FIELD_ACTION = "action";
+	public static final String MSG_FIELD_EXECUTOR = "executor";
 	//监视、执行模块参数原语(用于设置任务模块详细安排，如：{"A":{"modelId": "xxx", "args": {具体参数}}, "B": {"modelId": "xxxx", "args": {xx}}})
-	public static final String MSG_FIELD_MODEL_SET = "modelSet";
-		//在参数原语中表示各模块的参数
-		public static final String MSG_FIELD_ARGUMENT = "args";
+	//在参数原语中表示各模块的参数
+	public static final String MSG_FIELD_ARGUMENT = "args";
 	
 	public static String getRandomString(int length) {
 		String s = "";
