@@ -1,0 +1,1 @@
+This is a IFTTT-like program in Java using B/S & C/S architecture.
